@@ -13,9 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/edwinpgm/clideas.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ideas",
+    "save ideas",
+    "thoughts"
+  ],
+  "author": {
+    "name": "Edwin Gonzales",
+    "email": "edwinpgm@gmail.com",
+    "url": "https://twitter.com/edwinpgm"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/edwinpgm/clideas/issues"
   },
