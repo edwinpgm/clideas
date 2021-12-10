@@ -1,15 +1,18 @@
 #!/usr/bin/env node
-const clearConsole = require('clear-any-console');
+const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
 
-// Clear console
-clearConsole();
-
-console.log(`
-NAME: ${pkgJSON.name}
-DESCRIPTION: ${pkgJSON.description}
-VERSION: ${pkgJSON.version}
-`)
+// Welcome message
+welcome({
+  title: pkgJSON.name,
+  tagLine: 'My ideas',
+  description: pkgJSON.description,
+  version: pkgJSON.version,
+  bgColor: '#9042f5',
+  color: '#ffffff',
+  bold: true,
+  clear: false,
+})
 
 console.log(`
 These are my ideas saved.
