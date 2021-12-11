@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import welcome from 'cli-welcome';
-// import pkgJSON from './package.json';
+import pkgJSON from './package.json';
 import chalk from 'chalk';
 
 const log = console.log;
@@ -12,20 +12,20 @@ const info = chalk.blue;
 const warning = chalk.keyword('orange');
 const error = chalk.red.bold;
 
-// Welcome message
-welcome({
-  title: `pkgJSON.name`,
-  tagLine: 'My ideas',
-  description: `pkgJSON.description`,
-  version: `pkgJSON.version`,
-  bgColor: '#9042f5',
-  color: '#ffffff',
-  bold: true,
-  clear: false
-});
+export default () => {
+  // Welcome message
+  welcome({
+    title: pkgJSON.name,
+    tagLine: 'My ideas',
+    description: pkgJSON.description,
+    version: pkgJSON.version,
+    bgColor: '#9042f5',
+    color: '#ffffff',
+    bold: true,
+    clear: true
+  });
 
-log(`
-${title(` These are my ideas saved `)}
+  log(`${title(` These are my ideas saved `)}
 
 1. asdsad asdasd
 2. asdsad asdasd
@@ -33,5 +33,5 @@ ${title(` These are my ideas saved `)}
 ${sym.success} ${success(`Success`)}
 ${sym.info} ${info(`Info`)}
 ${sym.warning} ${warning(`Warning`)}
-${sym.error} ${error(`Error`)}
-`);
+${sym.error} ${error(`Error`)}`);
+};
