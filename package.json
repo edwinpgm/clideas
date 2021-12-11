@@ -33,5 +33,11 @@
     "cli-welcome": "^2.2.2",
     "log-symbols": "^5.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "files": [
+    "index.js"
+  ]
 }

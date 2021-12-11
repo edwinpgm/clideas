@@ -4,13 +4,13 @@ import welcome from 'cli-welcome';
 import chalk from 'chalk';
 
 const log = console.log;
-const title = chalk.hex('#000000').bgYellow.bold
+const title = chalk.hex('#000000').bgYellow.bold;
 // Alerts
-import sym from 'log-symbols'
-const success = chalk.green
-const info = chalk.blue
-const warning = chalk.keyword('orange')
-const error = chalk.red.bold
+import sym from 'log-symbols';
+const success = chalk.green;
+const info = chalk.blue;
+const warning = chalk.keyword('orange');
+const error = chalk.red.bold;
 
 // Welcome message
 welcome({
@@ -21,8 +21,8 @@ welcome({
   bgColor: '#9042f5',
   color: '#ffffff',
   bold: true,
-  clear: false,
-})
+  clear: false
+});
 
 log(`
 ${title(` These are my ideas saved `)}
