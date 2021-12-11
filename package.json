@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/edwinpgm/clideas#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "cli-welcome": "^2.2.2"
   }
 }
